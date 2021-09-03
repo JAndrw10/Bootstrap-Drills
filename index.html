@@ -1,82 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap 4 Drills</title>
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Boostrap Drills</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-
-  <body>
-    
+<body>
     <div class="container">
-      <div class="row justify-content-center">
-        <h1>First Bootstrap Project</h1>
-      </div>
+        <div class="row justify-content-center">
+            <!--#5,#7-->
+            <h1>First Boostrap Project!
+                <!--#5-->
+            </h1>
+        </div>
 
-      <div class="row justify-content-center">
-        <div class="col">That's not a knife
+        <div class="row justify-content-between">
+            <div>
+                One of three columns
+            </div>
+
+            <div>
+                One of three columns
+            </div>
+
+            <div>
+                One of three columns
+            </div>
         </div>
-        <div class="col">Pulls out knife
+
+        <div class="row">
+            <form class="col-12 px-0 border border-info p-3">
+                <div class="form-group">
+                    <label for="email-input">Email</label>
+                    <input type="email" class="form-control" name="email-input" id="email-input">
+                </div>
+                <div class="form-group">
+                    <label for="password-input">Password</label>
+                    <input type="password" class="form-control" name="password" id="password-input">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="cat-Checkbox">
+                    <label class="form-check-label" for="cat-Checkbox">Cats</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="dog-checkbox">
+                    <label class="form-check-label" for="dog-checkbox">Dogs</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Cheese Pizza!
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                      Hawaiian Pizza
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                    <label class="form-check-label" for="exampleRadios3">
+                      Supreme Pizza
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
-        <div class="col">Now that's a knife</div>
-      </div>
+           
+
+        <h3> Star Wars characters and info</h3>
+        <div class="row mt-3">
+            <div class="card col-4">
+                <div class="card-body">
+                  <h5 class="font-weight-bold">Luke Skywalker</h5>
+                  <p class="card-text"> Originally a farmer on Tatooine living with his uncle and aunt, Luke becomes a pivotal figure in the Rebel Alliance's struggle against the Galatic Empire. The son of fallen Jedi knight Anakin Skywalker, Luke is the twin brother of Rebellion leader Princess leia and eventual brother-in-law of smuggler Han Solo.</p>
+                </div>
+              </div>
+              <div class="card col-4">
+                <div class="card-body">
+                  <h5 class="font-weight-bold">Anakin Skywalker</h5>
+                  <p class="card-text"> Originally as a slave on Tatooine, Anakin is a Jedi prophesied to become one of the most powerful Jedi ever who would bring balance to the Force. Anakin is later lured to the dark side of the Force by Palpatine and becomes a Sith lord, assuming the title Darth Vadar later serving as the Galatic Empire's chief enforcer.</p>
+                </div>
+              </div>
+              <div class="card col-4">
+                <div class="card-body">
+                  <h5 class="font-weight-bold">Master Yoda</h5>
+                  <p class="card-text"> Yoda is a mentor to Obi-Wan Kenobi, and lives in exile on the swamp planet of Dagobah. He trains Luke Skywalker in the ways of the Force, later Yoda leads the Jedi High Council and trains the young generations of Jedi until they are assigned to a master.</p>
+                </div>
+              </div>
+              <div class="card col-4">
+                <div class="card-body">
+                  <h5 class="font-weight-bold">Princess Leia</h5>
+                  <p class="card-text">Leia is the Princess of the planet Alderaan, a member of the Imperial Senate and an agent of the Rebel Alliance. Leia helps destroy the Empire's superweapon, the Death Star.</p>
+                </div>
+              </div>
+              <div class="card col-4">
+                <div class="card-body">
+                  <h5 class="font-weight-bold">Obi-Wan Kenobi</h5>
+                  <p class="card-text">Obi-Wan is a Jedi Master who is a mentor to Luke Skywalker, to whom he introduces the ways of the Jedi. Obi-Wan guides Luke through the Force in his fight against the Galatic Empire.</p>
+                </div>
+              </div>
+              <div class="card col-4">
+                <div class="card-body">
+                  <h5 class="font-weight-bold">Rey Skywalker</h5>
+                  <p class="card-text"> Rey is introduced as a scavenger who was left behind on the planet of Jakku when she was a child. She later becomes involved with the Resisitance's conflict with the First Order, Rey trains to be a Jedi under Luke Skywalker and General leia.</p>
+                </div>
+              </div>
+
+        </div>
     </div>
+</body>
 
-<!--Bootstrap Forms # 2 -->
-
-<div class="row">
-    <form class="col-12 p-3 border border-primary">
-        <div class="form-group">
-            <label for="email-input">Email</label>
-            <input type="email" class="form-control" name="email-input" id="email-input">
-        </div>
-        <div class="form-group">
-            <label for="password-input">Password</label>
-            <input type="password" class="form-control" name="password" id="password-input">
-        </div>
-        <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="cat-checkbox">
-            <label class="form-check-label" for="cat-checkbox">Cats</label>
-        </div>
-        <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="dog-checkbox">
-            <label class="form-check-label" for="dog-checkbox">Dogs</label>
-        </div>
-
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-            <label class="form-check-label" for="exampleRadios1">
-               Hawaiian Pizza
-            </label> 
-        </div>
-
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-                Cheese Pizza
-            </label>
-        </div>
-
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-            <label class="form-check-label" for="exampleRadios3">
-                Pepperoni Pizza
-            </label>
-        </div>
-        <button type="submit" class="btn btn-primary">Confirm Identity</button>
-    </form>
-
-  </body>
 </html>
+
+<!--to get boostrap and your own css files to d things boostrap doesnt do with css, put your style sheet after boostrap bc the page loads from top down and since boostrap comes before your style sheet it will override boostrap since your style sheet is most recent.  -->
+<!--boostrap only gives CSS classes-->
